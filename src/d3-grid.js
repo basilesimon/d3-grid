@@ -31,6 +31,8 @@ export default function() {
     }
 
     if (nodeSize) {
+      x = d3.scaleOrdinal();
+      y = d3.scaleOrdinal();
       x
         .domain(d3.range(_cols))
         .range(
